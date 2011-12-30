@@ -1,0 +1,19 @@
+{
+    "name":         "ofs-solr",
+    "description":  "ObjectFS storage wrapper for Apache Solr.",
+    "homepage":     "https://github.com/emilis/ofs-solr",
+    "version":      "1.0",
+    "main":         "index.js",
+    "repositories": [{
+            "type":"git",
+            "url":"git://github.com/emilis/ofs-solr.git"
+        }],
+    "objectfs-uris": [
+        { "scheme":"solr", "module":"ofs-solr" },
+        { "scheme":"http", "path": "*/solr/", "module":"ofs-solr" },
+        { "scheme":"http", "path": "*/solr", "module":"ofs-solr" }],
+    "maintainers":   [
+        { "name": "Emilis Dambauskas", "email": "emilis.d@gmail.com", "web": "http://emilis.github.com/" }],
+    "licenses":     [
+        { "type": "GPLv3", "url": "http://www.gnu.org/licenses/gpl.txt" }]
+}
